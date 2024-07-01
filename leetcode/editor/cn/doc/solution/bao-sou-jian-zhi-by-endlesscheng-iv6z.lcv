@@ -1,0 +1,652 @@
+## 方法一：爆搜
+
+根据题目的数据范围，路径至多有 $\dfrac{\textit{maxTime}}{\min(\textit{time}_j)}\le \dfrac{100}{10} = 10$ 条边，这意味着搜索树至多有 $11$ 层；同时，题目保证每个节点至多有 $4$ 条边与之相连，因此搜索树的每个节点至多有 $4$ 个儿子。所以本题可以视作在一棵层数至多为 $11$ 的四叉树上递归，这可以在时限内跑完。
+
+递归到下一个节点之前，如果发现消耗的时间超过了 $\textit{maxTime}$，则不递归。
+
+* [sol-Python3]
+
+```py
+class Solution:
+    def maximalPathQuality(self, values: List[int], edges: List[List[int]], max_time: int) -> int:
+        n = len(values)
+        g = [[] for _ in range(n)]
+        for x, y, t in edges:
+            g[x].append((y, t))
+            g[y].append((x, t))
+
+        def dfs(x: int, sum_time: int, sum_value: int) -> None:
+            if x == 0:
+                nonlocal ans
+                ans = max(ans, sum_value)
+                # 注意这里没有 return，还可以继续走
+            for y, t in g[x]:
+                if sum_time + t > max_time:
+                    continue
+                if vis[y]:
+                    dfs(y, sum_time + t, sum_value)
+                else:
+                    vis[y] = True
+                    # 每个节点的价值至多算入价值总和中一次
+                    dfs(y, sum_time + t, sum_value + values[y])
+                    vis[y] = False  # 恢复现场
+
+        ans = 0
+        vis = [False] * n
+        vis[0] = True
+        dfs(0, 0, values[0])
+        return ans
+```
+
+* [sol-Java]
+
+```java
+public class Solution {
+    public int maximalPathQuality(int[] values, int[][] edges, int maxTime) {
+        int n = values.length;
+        List<int[]>[] g = new ArrayList[n];
+        Arrays.setAll(g, i -> new ArrayList<>());
+        for (int[] e : edges) {
+            int x = e[0];
+            int y = e[1];
+            int t = e[2];
+            g[x].add(new int[]{y, t});
+            g[y].add(new int[]{x, t});
+        }
+
+        boolean[] vis = new boolean[n];
+        vis[0] = true;
+        return dfs(0, 0, values[0], vis, g, values, maxTime);
+    }
+
+    private int dfs(int x, int sumTime, int sumValue, boolean[] vis, List<int[]>[] g, int[] values, int maxTime) {
+        int res = x == 0 ? sumValue : 0;
+        for (int[] e : g[x]) {
+            int y = e[0];
+            int t = e[1];
+            if (sumTime + t > maxTime) {
+                continue;
+            }
+            if (vis[y]) {
+                res = Math.max(res, dfs(y, sumTime + t, sumValue, vis, g, values, maxTime));
+            } else {
+                vis[y] = true;
+                // 每个节点的价值至多算入价值总和中一次
+                res = Math.max(res, dfs(y, sumTime + t, sumValue + values[y], vis, g, values, maxTime));
+                vis[y] = false; // 恢复现场
+            }
+        }
+        return res;
+    }
+}
+```
+
+* [sol-C++]
+
+```cpp
+class Solution {
+public:
+    int maximalPathQuality(vector<int>& values, vector<vector<int>>& edges, int max_time) {
+        int n = values.size();
+        vector<vector<pair<int, int>>> g(n);
+        for (auto& e : edges) {
+            int x = e[0], y = e[1], t = e[2];
+            g[x].emplace_back(y, t);
+            g[y].emplace_back(x, t);
+        }
+
+        int ans = 0;
+        vector<int> vis(n);
+        vis[0] = true;
+        auto dfs = [&](auto&& dfs, int x, int sum_time, int sum_value) -> void {
+            if (x == 0) {
+                ans = max(ans, sum_value);
+                // 注意这里没有 return，还可以继续走
+            }
+            for (auto& [y, t] : g[x]) {
+                if (sum_time + t > max_time) {
+                    continue;
+                }
+                if (vis[y]) {
+                    dfs(dfs, y, sum_time + t, sum_value);
+                } else {
+                    vis[y] = true;
+                    // 每个节点的价值至多算入价值总和中一次
+                    dfs(dfs, y, sum_time + t, sum_value + values[y]);
+                    vis[y] = false; // 恢复现场
+                }
+            }
+        };
+        dfs(dfs, 0, 0, values[0]);
+        return ans;
+    }
+};
+```
+
+* [sol-Go]
+
+```go
+func maximalPathQuality(values []int, edges [][]int, maxTime int) (ans int) {
+    n := len(values)
+    type edge struct{ to, time int }
+    g := make([][]edge, n)
+    for _, e := range edges {
+        x, y, t := e[0], e[1], e[2]
+        g[x] = append(g[x], edge{y, t})
+        g[y] = append(g[y], edge{x, t})
+    }
+
+    vis := make([]bool, n)
+    vis[0] = true
+    var dfs func(int, int, int)
+    dfs = func(x, sumTime, sumValue int) {
+        if x == 0 {
+            ans = max(ans, sumValue)
+            // 注意这里没有 return，还可以继续走
+        }
+        for _, e := range g[x] {
+            y, t := e.to, e.time
+            if sumTime+t > maxTime {
+                continue
+            }
+            if vis[y] {
+                dfs(y, sumTime+t, sumValue)
+            } else {
+                vis[y] = true
+                // 每个节点的价值至多算入价值总和中一次
+                dfs(y, sumTime+t, sumValue+values[y])
+                vis[y] = false // 恢复现场
+            }
+        }
+    }
+    dfs(0, 0, values[0])
+    return ans
+}
+```
+
+* [sol-JavaScript]
+
+```js
+var maximalPathQuality = function(values, edges, maxTime) {
+    const n = values.length;
+    const g = Array.from({length: n}, () => []);
+    for (const [x, y, t] of edges) {
+        g[x].push([y, t]);
+        g[y].push([x, t]);
+    }
+
+    let ans = 0;
+    const vis = Array(n).fill(false);
+    vis[0] = true;
+    function dfs(x, sumTime, sumValue) {
+        if (x === 0) {
+            ans = Math.max(ans, sumValue);
+            // 注意这里没有 return，还可以继续走
+        }
+        for (const [y, t] of g[x]) {
+            if (sumTime + t > maxTime) {
+                continue;
+            }
+            if (vis[y]) {
+                dfs(y, sumTime + t, sumValue);
+            } else {
+                vis[y] = true;
+                // 每个节点的价值至多算入价值总和中一次
+                dfs(y, sumTime + t, sumValue + values[y]);
+                vis[y] = false; // 恢复现场
+            }
+        }
+    }
+    dfs(0, 0, values[0]);
+    return ans;
+};
+```
+
+* [sol-Rust]
+
+```rust
+impl Solution {
+    pub fn maximal_path_quality(values: Vec<i32>, edges: Vec<Vec<i32>>, max_time: i32) -> i32 {
+        let n = values.len();
+        let mut g = vec![vec![]; n];
+        for e in edges {
+            let x = e[0] as usize;
+            let y = e[1] as usize;
+            let t = e[2];
+            g[x].push((y, t));
+            g[y].push((x, t));
+        }
+
+        fn dfs(x: usize, sum_time: i32, sum_value: i32, vis: &mut Vec<bool>, g: &Vec<Vec<(usize, i32)>>, values: &Vec<i32>, max_time: i32) -> i32 {
+            let mut ans = if x == 0 { sum_value } else { 0 };
+            for &(y, t) in &g[x] {
+                if sum_time + t > max_time {
+                    continue;
+                }
+                if vis[y] {
+                    ans = ans.max(dfs(y, sum_time + t, sum_value, vis, g, values, max_time));
+                } else {
+                    vis[y] = true;
+                    // 每个节点的价值至多算入价值总和中一次
+                    ans = ans.max(dfs(y, sum_time + t, sum_value + values[y], vis, g, values, max_time));
+                    vis[y] = false; // 恢复现场
+                }
+            }
+            ans
+        }
+
+        let mut vis = vec![false; n];
+        vis[0] = true;
+        dfs(0, 0, values[0], &mut vis, &g, &values, max_time)
+    }
+}
+```
+
+#### 复杂度分析
+
+- 时间复杂度：$\mathcal{O}(n+m+4^k)$，其中 $n$ 是 $\textit{values}$ 的长度，$m$ 是 $\textit{edges}$ 的长度，$k=\dfrac{\textit{maxTime}}{\min(\textit{time}_j)}$。
+- 空间复杂度：$\mathcal{O}(n+m+k)$。注意递归会消耗 $\mathcal{O}(k)$ 的栈空间。
+
+## 方法二：爆搜+最短路剪枝
+
+**前置知识**：[Dijkstra 算法介绍](https://leetcode.cn/problems/network-delay-time/solution/liang-chong-dijkstra-xie-fa-fu-ti-dan-py-ooe8/)
+
+用 Dijkstra 算法预处理起点 $0$ 到每个节点的最短路，这也是每个节点到 $0$ 的最短路。
+
+> 由于本题是稀疏图，使用堆优化的 Dijkstra 算法。
+
+在递归到下一个节点之前，判断下一个节点在走最短路的前提下，能否在 $\textit{maxTime}$ 时间内回到起点 $0$，若不能则不递归。
+
+* [sol-Python3]
+
+```py
+class Solution:
+    def maximalPathQuality(self, values: List[int], edges: List[List[int]], max_time: int) -> int:
+        n = len(values)
+        g = [[] for _ in range(n)]
+        for x, y, t in edges:
+            g[x].append((y, t))
+            g[y].append((x, t))
+
+        # Dijkstra 算法
+        dis = [inf] * n
+        dis[0] = 0
+        h = [(0, 0)]
+        while h:
+            dx, x = heappop(h)
+            if dx > dis[x]:  # x 之前出堆过
+                continue
+            for y, d in g[x]:
+                new_dis = dx + d
+                if new_dis < dis[y]:
+                    dis[y] = new_dis  # 更新 x 的邻居的最短路
+                    heappush(h, (new_dis, y))
+
+        def dfs(x: int, sum_time: int, sum_value: int) -> None:
+            if x == 0:
+                nonlocal ans
+                ans = max(ans, sum_value)
+                # 注意这里没有 return，还可以继续走
+            for y, t in g[x]:
+                # 相比方法一，这里多了 dis[y]
+                if sum_time + t + dis[y] > max_time:
+                    continue
+                if vis[y]:
+                    dfs(y, sum_time + t, sum_value)
+                else:
+                    vis[y] = True
+                    # 每个节点的价值至多算入价值总和中一次
+                    dfs(y, sum_time + t, sum_value + values[y])
+                    vis[y] = False  # 恢复现场
+
+        ans = 0
+        vis = [False] * n
+        vis[0] = True
+        dfs(0, 0, values[0])
+        return ans
+```
+
+* [sol-Java]
+
+```java
+public class Solution {
+    public int maximalPathQuality(int[] values, int[][] edges, int maxTime) {
+        int n = values.length;
+        List<int[]>[] g = new ArrayList[n];
+        Arrays.setAll(g, i -> new ArrayList<>());
+        for (int[] e : edges) {
+            int x = e[0];
+            int y = e[1];
+            int t = e[2];
+            g[x].add(new int[]{y, t});
+            g[y].add(new int[]{x, t});
+        }
+
+        // Dijkstra 算法
+        int[] dis = new int[n];
+        Arrays.fill(dis, Integer.MAX_VALUE);
+        dis[0] = 0;
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        pq.add(new int[]{0, 0});
+        while (!pq.isEmpty()) {
+            int[] p = pq.poll();
+            int dx = p[0];
+            int x = p[1];
+            if (dx > dis[x]) { // x 之前出堆过
+                continue;
+            }
+            for (int[] e : g[x]) {
+                int y = e[0];
+                int newDis = dx + e[1];
+                if (newDis < dis[y]) {
+                    dis[y] = newDis; // 更新 x 的邻居的最短路
+                    pq.offer(new int[]{newDis, y});
+                }
+            }
+        }
+
+        boolean[] vis = new boolean[n];
+        vis[0] = true;
+        return dfs(0, 0, values[0], vis, g, values, maxTime, dis);
+    }
+
+    private int dfs(int x, int sumTime, int sumValue, boolean[] vis, List<int[]>[] g, int[] values, int maxTime, int[] dis) {
+        int res = x == 0 ? sumValue : 0;
+        for (int[] e : g[x]) {
+            int y = e[0];
+            int t = e[1];
+            // 相比方法一，这里多了 dis[y]
+            if (sumTime + t + dis[y] > maxTime) {
+                continue;
+            }
+            if (vis[y]) {
+                res = Math.max(res, dfs(y, sumTime + t, sumValue, vis, g, values, maxTime, dis));
+            } else {
+                vis[y] = true;
+                // 每个节点的价值至多算入价值总和中一次
+                res = Math.max(res, dfs(y, sumTime + t, sumValue + values[y], vis, g, values, maxTime, dis));
+                vis[y] = false; // 恢复现场
+            }
+        }
+        return res;
+    }
+}
+```
+
+* [sol-C++]
+
+```cpp
+class Solution {
+public:
+    int maximalPathQuality(vector<int>& values, vector<vector<int>>& edges, int max_time) {
+        int n = values.size();
+        vector<vector<pair<int, int>>> g(n);
+        for (auto& e : edges) {
+            int x = e[0], y = e[1], t = e[2];
+            g[x].emplace_back(y, t);
+            g[y].emplace_back(x, t);
+        }
+
+        // Dijkstra 算法
+        vector<int> dis(n, INT_MAX);
+        dis[0] = 0;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
+        pq.emplace(0, 0);
+        while (!pq.empty()) {
+            auto [dx, x] = pq.top();
+            pq.pop();
+            if (dx > dis[x]) { // x 之前出堆过
+                continue;
+            }
+            for (auto& [y, d] : g[x]) {
+                int new_dis = dx + d;
+                if (new_dis < dis[y]) {
+                    dis[y] = new_dis; // 更新 x 的邻居的最短路
+                    pq.emplace(new_dis, y);
+                }
+            }
+        }
+
+        int ans = 0;
+        vector<int> vis(n);
+        vis[0] = true;
+        auto dfs = [&](auto&& dfs, int x, int sum_time, int sum_value) -> void {
+            if (x == 0) {
+                ans = max(ans, sum_value);
+                // 注意这里没有 return，还可以继续走
+            }
+            for (auto& [y, t] : g[x]) {
+                // 相比方法一，这里多了 dis[y]
+                if (sum_time + t + dis[y] > max_time) {
+                    continue;
+                }
+                if (vis[y]) {
+                    dfs(dfs, y, sum_time + t, sum_value);
+                } else {
+                    vis[y] = true;
+                    // 每个节点的价值至多算入价值总和中一次
+                    dfs(dfs, y, sum_time + t, sum_value + values[y]);
+                    vis[y] = false; // 恢复现场
+                }
+            }
+        };
+        dfs(dfs, 0, 0, values[0]);
+        return ans;
+    }
+};
+```
+
+* [sol-Go]
+
+```go
+func maximalPathQuality(values []int, edges [][]int, maxTime int) (ans int) {
+    n := len(values)
+    type edge struct{ to, time int }
+    g := make([][]edge, n)
+    for _, e := range edges {
+        x, y, t := e[0], e[1], e[2]
+        g[x] = append(g[x], edge{y, t})
+        g[y] = append(g[y], edge{x, t})
+    }
+
+    // Dijkstra 算法
+    dis := make([]int, n)
+    for i := 1; i < n; i++ {
+        dis[i] = math.MaxInt
+    }
+    h := hp{{0, 0}}
+    for len(h) > 0 {
+        p := heap.Pop(&h).(pair)
+        dx := p.dis
+        x := p.x
+        if dx > dis[x] { // x 之前出堆过
+            continue
+        }
+        for _, e := range g[x] {
+            y := e.to
+            newDis := dx + e.time
+            if newDis < dis[y] {
+                dis[y] = newDis // 更新 x 的邻居的最短路
+                heap.Push(&h, pair{newDis, y})
+            }
+        }
+    }
+
+    vis := make([]bool, n)
+    vis[0] = true
+    var dfs func(int, int, int)
+    dfs = func(x, sumTime, sumValue int) {
+        if x == 0 {
+            ans = max(ans, sumValue)
+            // 注意这里没有 return，还可以继续走
+        }
+        for _, e := range g[x] {
+            y, t := e.to, e.time
+            // 相比方法一，这里多了 dis[y]
+            if sumTime+t+dis[y] > maxTime {
+                continue
+            }
+            if vis[y] {
+                dfs(y, sumTime+t, sumValue)
+            } else {
+                vis[y] = true
+                // 每个节点的价值至多算入价值总和中一次
+                dfs(y, sumTime+t, sumValue+values[y])
+                vis[y] = false // 恢复现场
+            }
+        }
+    }
+    dfs(0, 0, values[0])
+    return ans
+}
+
+type pair struct{ dis, x int }
+type hp []pair
+func (h hp) Len() int           { return len(h) }
+func (h hp) Less(i, j int) bool { return h[i].dis < h[j].dis }
+func (h hp) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *hp) Push(v any)        { *h = append(*h, v.(pair)) }
+func (h *hp) Pop() (v any)      { a := *h; *h, v = a[:len(a)-1], a[len(a)-1]; return }
+```
+
+* [sol-JavaScript]
+
+```js
+var maximalPathQuality = function(values, edges, maxTime) {
+    const n = values.length;
+    const g = Array.from({ length: n }, () => []);
+    for (const [x, y, t] of edges) {
+        g[x].push([y, t]);
+        g[y].push([x, t]);
+    }
+
+    // Dijkstra 算法
+    const dis = Array(n).fill(Infinity);
+    dis[0] = 0;
+    const pq =  new MinPriorityQueue({priority: (p) => p[0]});
+    pq.enqueue([0, 0]);
+    while (!pq.isEmpty()) {
+        const [dx, x] = pq.dequeue().element;
+        if (dx > dis[x]) { // x 之前出堆过
+            continue;
+        }
+        for (const [y, t] of g[x]) {
+            const new_dis = dx + t;
+            if (new_dis < dis[y]) {
+                dis[y] = new_dis; // 更新 x 的邻居的最短路
+                pq.enqueue([new_dis, y]);
+            }
+        }
+    }
+
+    let ans = 0;
+    const vis = Array(n).fill(false);
+    vis[0] = true;
+    function dfs(x, sumTime, sumValue) {
+        if (x === 0) {
+            ans = Math.max(ans, sumValue);
+            // 注意这里没有 return，还可以继续走
+        }
+        for (const [y, t] of g[x]) {
+            // 相比方法一，这里多了 dis[y]
+            if (sumTime + t + dis[y] > maxTime) {
+                continue;
+            }
+            if (vis[y]) {
+                dfs(y, sumTime + t, sumValue);
+            } else {
+                vis[y] = true;
+                // 每个节点的价值至多算入价值总和中一次
+                dfs(y, sumTime + t, sumValue + values[y]);
+                vis[y] = false; // 恢复现场
+            }
+        }
+    }
+    dfs(0, 0, values[0]);
+    return ans;
+};
+```
+
+* [sol-Rust]
+
+```rust
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn maximal_path_quality(values: Vec<i32>, edges: Vec<Vec<i32>>, max_time: i32) -> i32 {
+        let n = values.len();
+        let mut g = vec![vec![]; n];
+        for e in edges {
+            let x = e[0] as usize;
+            let y = e[1] as usize;
+            let t = e[2];
+            g[x].push((y, t));
+            g[y].push((x, t));
+        }
+
+        // Dijkstra 算法
+        let mut dis = vec![i32::MAX; n];
+        dis[0] = 0;
+        let mut h = BinaryHeap::new();
+        h.push((0, 0));
+        while let Some((dx, x)) = h.pop() {
+            if -dx > dis[x] { // x 之前出堆过
+                continue;
+            }
+            for &(y, t) in &g[x] {
+                let new_dis = -dx + t;
+                if new_dis < dis[y] {
+                    dis[y] = new_dis; // 更新 x 的邻居的最短路
+                    h.push((-new_dis, y));
+                }
+            }
+        }
+
+        fn dfs(x: usize, sum_time: i32, sum_value: i32, vis: &mut Vec<bool>, g: &Vec<Vec<(usize, i32)>>, values: &Vec<i32>, max_time: i32, dis: &Vec<i32>) -> i32 {
+            let mut ans = if x == 0 { sum_value } else { 0 };
+            for &(y, t) in &g[x] {
+                // 相比方法一，这里多了 dis[y]
+                if sum_time + t + dis[y] > max_time {
+                    continue;
+                }
+                if vis[y] {
+                    ans = ans.max(dfs(y, sum_time + t, sum_value, vis, g, values, max_time, dis));
+                } else {
+                    vis[y] = true;
+                    // 每个节点的价值至多算入价值总和中一次
+                    ans = ans.max(dfs(y, sum_time + t, sum_value + values[y], vis, g, values, max_time, dis));
+                    vis[y] = false; // 恢复现场
+                }
+            }
+            ans
+        }
+
+        let mut vis = vec![false; n];
+        vis[0] = true;
+        dfs(0, 0, values[0], &mut vis, &g, &values, max_time, &dis)
+    }
+}
+```
+
+#### 复杂度分析
+
+- 时间复杂度：$\mathcal{O}(n+m\log m+4^k)$，其中 $n$ 是 $\textit{values}$ 的长度，$m$ 是 $\textit{edges}$ 的长度，$k=\dfrac{\textit{maxTime}}{\min(\textit{time}_j)}$。Dijkstra 算法的时间复杂度为 $\mathcal{O}(n + m\log m)$。
+- 空间复杂度：$\mathcal{O}(n+m+k)$。注意递归会消耗 $\mathcal{O}(k)$ 的栈空间。
+
+## 分类题单
+
+以下题单没有特定的顺序，可以按照个人喜好刷题。
+
+1. [滑动窗口（定长/不定长/多指针）](https://leetcode.cn/circle/discuss/0viNMK/)
+2. [二分算法（二分答案/最小化最大值/最大化最小值/第K小）](https://leetcode.cn/circle/discuss/SqopEo/)
+3. [单调栈（基础/矩形面积/贡献法/最小字典序）](https://leetcode.cn/circle/discuss/9oZFK9/)
+4. [网格图（DFS/BFS/综合应用）](https://leetcode.cn/circle/discuss/YiXPXW/)
+5. [位运算（基础/性质/拆位/试填/恒等式/贪心/脑筋急转弯）](https://leetcode.cn/circle/discuss/dHn9Vk/)
+6. [图论算法（DFS/BFS/拓扑排序/最短路/最小生成树/二分图/基环树/欧拉路径）](https://leetcode.cn/circle/discuss/01LUak/)
+7. [动态规划（入门/背包/状态机/划分/区间/状压/数位/数据结构优化/树形/博弈/概率期望）](https://leetcode.cn/circle/discuss/tXLS3i/)
+8. [常用数据结构（前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树）](https://leetcode.cn/circle/discuss/mOr1u6/)
+9. [数学算法（数论/组合/概率期望/博弈/计算几何/随机算法）](https://leetcode.cn/circle/discuss/IYT3ss/)
+
+[我的题解精选（已分类）](https://github.com/EndlessCheng/codeforces-go/blob/master/leetcode/SOLUTIONS.md)
+
+欢迎关注 [B站@灵茶山艾府](https://space.bilibili.com/206214)
