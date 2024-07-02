@@ -1,5 +1,5 @@
 # ninja log v5
 4	2840	1719805412295334466	CMakeFiles/lc.dir/main.cpp.o	ef362bb9545cda0b
+5349	5867	1719815189307072407	2065-maximum-path-quality-of-a-graph	977735e896dc41c5
 2848	3296	1719805412750125456	lc	773d6b2cf1e98ed
 49	5347	1719815188779717190	CMakeFiles/2065-maximum-path-quality-of-a-graph.dir/leetcode/editor/cn/2065-maximum-path-quality-of-a-graph.cpp.o	59d0e858e94925bb
-5349	5867	1719815189307072407	2065-maximum-path-quality-of-a-graph	977735e896dc41c5

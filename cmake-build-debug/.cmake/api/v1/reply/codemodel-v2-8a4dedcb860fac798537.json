@@ -16,7 +16,10 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -32,7 +35,10 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -40,9 +46,30 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "1-two-sum::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1-two-sum-Debug-25df8dd4c0cb3e89355b.json",
+					"name" : "1-two-sum",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2-add-two-numbers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2-add-two-numbers-Debug-6f32b39e956703f3e05e.json",
+					"name" : "2-add-two-numbers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "2065-maximum-path-quality-of-a-graph::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-2065-maximum-path-quality-of-a-graph-Debug-860ab694bee912550776.json",
 					"name" : "2065-maximum-path-quality-of-a-graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3115-maximum-prime-difference::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3115-maximum-prime-difference-Debug-abfd6249426ce6d0d498.json",
+					"name" : "3115-maximum-prime-difference",
 					"projectIndex" : 0
 				},
 				{

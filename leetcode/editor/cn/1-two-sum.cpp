@@ -54,12 +54,24 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        
+        int n = nums.size();
+        for(int i = 0; i < n; i++) {
+            int num = target - nums[i];
+            if(find(nums.begin(), nums.end(), num) != nums.end()) {
+                int pos = find(nums.begin(), nums.end(), num) - nums.begin();
+                if(pos == i) {
+                    continue;
+                }
+                return {i, pos};
+            }
+        }
+        return {-1, -1};
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
 
 
-\int main() {
+int main() {
     Solution s;
+    return 0;
 }

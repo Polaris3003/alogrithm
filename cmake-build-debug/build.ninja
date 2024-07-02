@@ -102,6 +102,99 @@ build 2065-maximum-path-quality-of-a-graph: CXX_EXECUTABLE_LINKER__2065-maximum-
   TARGET_FILE = 2065-maximum-path-quality-of-a-graph
   TARGET_PDB = 2065-maximum-path-quality-of-a-graph.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 1-two-sum
+
+
+#############################################
+# Order-only phony target for 1-two-sum
+
+build cmake_object_order_depends_target_1-two-sum: phony || CMakeFiles/1-two-sum.dir
+
+build CMakeFiles/1-two-sum.dir/leetcode/editor/cn/1-two-sum.cpp.o: CXX_COMPILER__1-two-sum_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/1-two-sum.cpp || cmake_object_order_depends_target_1-two-sum
+  DEP_FILE = CMakeFiles/1-two-sum.dir/leetcode/editor/cn/1-two-sum.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/1-two-sum.dir
+  OBJECT_FILE_DIR = CMakeFiles/1-two-sum.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1-two-sum
+
+
+#############################################
+# Link the executable 1-two-sum
+
+build 1-two-sum: CXX_EXECUTABLE_LINKER__1-two-sum_Debug CMakeFiles/1-two-sum.dir/leetcode/editor/cn/1-two-sum.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/1-two-sum.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 1-two-sum
+  TARGET_PDB = 1-two-sum.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2-add-two-numbers
+
+
+#############################################
+# Order-only phony target for 2-add-two-numbers
+
+build cmake_object_order_depends_target_2-add-two-numbers: phony || CMakeFiles/2-add-two-numbers.dir
+
+build CMakeFiles/2-add-two-numbers.dir/leetcode/editor/cn/2-add-two-numbers.cpp.o: CXX_COMPILER__2-add-two-numbers_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/2-add-two-numbers.cpp || cmake_object_order_depends_target_2-add-two-numbers
+  DEP_FILE = CMakeFiles/2-add-two-numbers.dir/leetcode/editor/cn/2-add-two-numbers.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/2-add-two-numbers.dir
+  OBJECT_FILE_DIR = CMakeFiles/2-add-two-numbers.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2-add-two-numbers
+
+
+#############################################
+# Link the executable 2-add-two-numbers
+
+build 2-add-two-numbers: CXX_EXECUTABLE_LINKER__2-add-two-numbers_Debug CMakeFiles/2-add-two-numbers.dir/leetcode/editor/cn/2-add-two-numbers.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/2-add-two-numbers.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2-add-two-numbers
+  TARGET_PDB = 2-add-two-numbers.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3115-maximum-prime-difference
+
+
+#############################################
+# Order-only phony target for 3115-maximum-prime-difference
+
+build cmake_object_order_depends_target_3115-maximum-prime-difference: phony || CMakeFiles/3115-maximum-prime-difference.dir
+
+build CMakeFiles/3115-maximum-prime-difference.dir/leetcode/editor/cn/3115-maximum-prime-difference.cpp.o: CXX_COMPILER__3115-maximum-prime-difference_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/3115-maximum-prime-difference.cpp || cmake_object_order_depends_target_3115-maximum-prime-difference
+  DEP_FILE = CMakeFiles/3115-maximum-prime-difference.dir/leetcode/editor/cn/3115-maximum-prime-difference.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/3115-maximum-prime-difference.dir
+  OBJECT_FILE_DIR = CMakeFiles/3115-maximum-prime-difference.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3115-maximum-prime-difference
+
+
+#############################################
+# Link the executable 3115-maximum-prime-difference
+
+build 3115-maximum-prime-difference: CXX_EXECUTABLE_LINKER__3115-maximum-prime-difference_Debug CMakeFiles/3115-maximum-prime-difference.dir/leetcode/editor/cn/3115-maximum-prime-difference.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/3115-maximum-prime-difference.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 3115-maximum-prime-difference
+  TARGET_PDB = 3115-maximum-prime-difference.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,7 +229,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference
 
 # =============================================================================
 # Built-in targets

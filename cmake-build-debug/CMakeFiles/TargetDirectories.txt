@@ -1,4 +1,7 @@
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/lc.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2065-maximum-path-quality-of-a-graph.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/1-two-sum.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2-add-two-numbers.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3115-maximum-prime-difference.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
