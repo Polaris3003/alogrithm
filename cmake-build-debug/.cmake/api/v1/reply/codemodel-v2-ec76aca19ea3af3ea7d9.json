@@ -19,7 +19,9 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -38,7 +40,9 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -63,6 +67,20 @@
 					"id" : "2065-maximum-path-quality-of-a-graph::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-2065-maximum-path-quality-of-a-graph-Debug-860ab694bee912550776.json",
 					"name" : "2065-maximum-path-quality-of-a-graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3-longest-substring-without-repeating-characters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3-longest-substring-without-repeating-characters-Debug-cab668f7392c1dd8abb0.json",
+					"name" : "3-longest-substring-without-repeating-characters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3099-harshad-number::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3099-harshad-number-Debug-ebc6deea2b895c6ea8fb.json",
+					"name" : "3099-harshad-number",
 					"projectIndex" : 0
 				},
 				{

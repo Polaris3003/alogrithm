@@ -195,6 +195,68 @@ build 3115-maximum-prime-difference: CXX_EXECUTABLE_LINKER__3115-maximum-prime-d
   TARGET_FILE = 3115-maximum-prime-difference
   TARGET_PDB = 3115-maximum-prime-difference.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 3099-harshad-number
+
+
+#############################################
+# Order-only phony target for 3099-harshad-number
+
+build cmake_object_order_depends_target_3099-harshad-number: phony || CMakeFiles/3099-harshad-number.dir
+
+build CMakeFiles/3099-harshad-number.dir/leetcode/editor/cn/3099-harshad-number.cpp.o: CXX_COMPILER__3099-harshad-number_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/3099-harshad-number.cpp || cmake_object_order_depends_target_3099-harshad-number
+  DEP_FILE = CMakeFiles/3099-harshad-number.dir/leetcode/editor/cn/3099-harshad-number.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/3099-harshad-number.dir
+  OBJECT_FILE_DIR = CMakeFiles/3099-harshad-number.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3099-harshad-number
+
+
+#############################################
+# Link the executable 3099-harshad-number
+
+build 3099-harshad-number: CXX_EXECUTABLE_LINKER__3099-harshad-number_Debug CMakeFiles/3099-harshad-number.dir/leetcode/editor/cn/3099-harshad-number.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/3099-harshad-number.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 3099-harshad-number
+  TARGET_PDB = 3099-harshad-number.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3-longest-substring-without-repeating-characters
+
+
+#############################################
+# Order-only phony target for 3-longest-substring-without-repeating-characters
+
+build cmake_object_order_depends_target_3-longest-substring-without-repeating-characters: phony || CMakeFiles/3-longest-substring-without-repeating-characters.dir
+
+build CMakeFiles/3-longest-substring-without-repeating-characters.dir/leetcode/editor/cn/3-longest-substring-without-repeating-characters.cpp.o: CXX_COMPILER__3-longest-substring-without-repeating-characters_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/3-longest-substring-without-repeating-characters.cpp || cmake_object_order_depends_target_3-longest-substring-without-repeating-characters
+  DEP_FILE = CMakeFiles/3-longest-substring-without-repeating-characters.dir/leetcode/editor/cn/3-longest-substring-without-repeating-characters.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/3-longest-substring-without-repeating-characters.dir
+  OBJECT_FILE_DIR = CMakeFiles/3-longest-substring-without-repeating-characters.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3-longest-substring-without-repeating-characters
+
+
+#############################################
+# Link the executable 3-longest-substring-without-repeating-characters
+
+build 3-longest-substring-without-repeating-characters: CXX_EXECUTABLE_LINKER__3-longest-substring-without-repeating-characters_Debug CMakeFiles/3-longest-substring-without-repeating-characters.dir/leetcode/editor/cn/3-longest-substring-without-repeating-characters.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/3-longest-substring-without-repeating-characters.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 3-longest-substring-without-repeating-characters
+  TARGET_PDB = 3-longest-substring-without-repeating-characters.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -229,7 +291,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters
 
 # =============================================================================
 # Built-in targets

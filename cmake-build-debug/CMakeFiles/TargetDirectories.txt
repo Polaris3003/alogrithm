@@ -3,5 +3,7 @@
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/1-two-sum.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2-add-two-numbers.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3115-maximum-prime-difference.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3099-harshad-number.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3-longest-substring-without-repeating-characters.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
