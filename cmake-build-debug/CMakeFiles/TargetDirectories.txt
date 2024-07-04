@@ -5,5 +5,8 @@
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3115-maximum-prime-difference.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3099-harshad-number.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3-longest-substring-without-repeating-characters.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/4-median-of-two-sorted-arrays.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

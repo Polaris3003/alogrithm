@@ -21,7 +21,10 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8,
+						9
 					]
 				}
 			],
@@ -42,7 +45,10 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8,
+						9
 					]
 				}
 			],
@@ -78,6 +84,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "3086-minimum-moves-to-pick-k-ones::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3086-minimum-moves-to-pick-k-ones-Debug-7b85dda9b6df7fce3ca4.json",
+					"name" : "3086-minimum-moves-to-pick-k-ones",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "3099-harshad-number::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-3099-harshad-number-Debug-ebc6deea2b895c6ea8fb.json",
 					"name" : "3099-harshad-number",
@@ -88,6 +101,20 @@
 					"id" : "3115-maximum-prime-difference::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-3115-maximum-prime-difference-Debug-abfd6249426ce6d0d498.json",
 					"name" : "3115-maximum-prime-difference",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3203-find-minimum-diameter-after-merging-two-trees::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3203-find-minimum-diameter-after-merging-two-trees-Debug-9118cbf2608c478bf856.json",
+					"name" : "3203-find-minimum-diameter-after-merging-two-trees",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "4-median-of-two-sorted-arrays::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4-median-of-two-sorted-arrays-Debug-6554e9f7b58e73da2966.json",
+					"name" : "4-median-of-two-sorted-arrays",
 					"projectIndex" : 0
 				},
 				{

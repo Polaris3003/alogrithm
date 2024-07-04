@@ -257,6 +257,99 @@ build 3-longest-substring-without-repeating-characters: CXX_EXECUTABLE_LINKER__3
   TARGET_FILE = 3-longest-substring-without-repeating-characters
   TARGET_PDB = 3-longest-substring-without-repeating-characters.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 3203-find-minimum-diameter-after-merging-two-trees
+
+
+#############################################
+# Order-only phony target for 3203-find-minimum-diameter-after-merging-two-trees
+
+build cmake_object_order_depends_target_3203-find-minimum-diameter-after-merging-two-trees: phony || CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir
+
+build CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp.o: CXX_COMPILER__3203-find-minimum-diameter-after-merging-two-trees_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp || cmake_object_order_depends_target_3203-find-minimum-diameter-after-merging-two-trees
+  DEP_FILE = CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir
+  OBJECT_FILE_DIR = CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3203-find-minimum-diameter-after-merging-two-trees
+
+
+#############################################
+# Link the executable 3203-find-minimum-diameter-after-merging-two-trees
+
+build 3203-find-minimum-diameter-after-merging-two-trees: CXX_EXECUTABLE_LINKER__3203-find-minimum-diameter-after-merging-two-trees_Debug CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 3203-find-minimum-diameter-after-merging-two-trees
+  TARGET_PDB = 3203-find-minimum-diameter-after-merging-two-trees.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3086-minimum-moves-to-pick-k-ones
+
+
+#############################################
+# Order-only phony target for 3086-minimum-moves-to-pick-k-ones
+
+build cmake_object_order_depends_target_3086-minimum-moves-to-pick-k-ones: phony || CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir
+
+build CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir/leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp.o: CXX_COMPILER__3086-minimum-moves-to-pick-k-ones_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp || cmake_object_order_depends_target_3086-minimum-moves-to-pick-k-ones
+  DEP_FILE = CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir/leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir
+  OBJECT_FILE_DIR = CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3086-minimum-moves-to-pick-k-ones
+
+
+#############################################
+# Link the executable 3086-minimum-moves-to-pick-k-ones
+
+build 3086-minimum-moves-to-pick-k-ones: CXX_EXECUTABLE_LINKER__3086-minimum-moves-to-pick-k-ones_Debug CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir/leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 3086-minimum-moves-to-pick-k-ones
+  TARGET_PDB = 3086-minimum-moves-to-pick-k-ones.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 4-median-of-two-sorted-arrays
+
+
+#############################################
+# Order-only phony target for 4-median-of-two-sorted-arrays
+
+build cmake_object_order_depends_target_4-median-of-two-sorted-arrays: phony || CMakeFiles/4-median-of-two-sorted-arrays.dir
+
+build CMakeFiles/4-median-of-two-sorted-arrays.dir/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp.o: CXX_COMPILER__4-median-of-two-sorted-arrays_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp || cmake_object_order_depends_target_4-median-of-two-sorted-arrays
+  DEP_FILE = CMakeFiles/4-median-of-two-sorted-arrays.dir/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/4-median-of-two-sorted-arrays.dir
+  OBJECT_FILE_DIR = CMakeFiles/4-median-of-two-sorted-arrays.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 4-median-of-two-sorted-arrays
+
+
+#############################################
+# Link the executable 4-median-of-two-sorted-arrays
+
+build 4-median-of-two-sorted-arrays: CXX_EXECUTABLE_LINKER__4-median-of-two-sorted-arrays_Debug CMakeFiles/4-median-of-two-sorted-arrays.dir/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/4-median-of-two-sorted-arrays.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 4-median-of-two-sorted-arrays
+  TARGET_PDB = 4-median-of-two-sorted-arrays.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -291,7 +384,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays
 
 # =============================================================================
 # Built-in targets

@@ -47,6 +47,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/3086-minimum-moves-to-pick-k-ones.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3086" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp" />
+              <option name="titleSlug" value="minimum-moves-to-pick-k-ones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/3099-harshad-number.cpp">
           <value>
             <LeetcodeEditor>
@@ -66,6 +77,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/3115-maximum-prime-difference.cpp" />
               <option name="titleSlug" value="maximum-prime-difference" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/3203-find-minimum-diameter-after-merging-two-trees.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3203" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp" />
+              <option name="titleSlug" value="find-minimum-diameter-after-merging-two-trees" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/4-median-of-two-sorted-arrays.md" />
+              <option name="frontendQuestionId" value="leetcode.cn4" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp" />
+              <option name="titleSlug" value="median-of-two-sorted-arrays" />
             </LeetcodeEditor>
           </value>
         </entry>
