@@ -14,3 +14,7 @@ add_executable(3-longest-substring-without-repeating-characters leetcode/editor/
 add_executable(3203-find-minimum-diameter-after-merging-two-trees leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp)
 add_executable(3086-minimum-moves-to-pick-k-ones leetcode/editor/cn/3086-minimum-moves-to-pick-k-ones.cpp)
 add_executable(4-median-of-two-sorted-arrays leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp)
+add_executable(724-find-pivot-index leetcode/editor/cn/724-find-pivot-index.cpp)
+add_executable(5-longest-palindromic-substring leetcode/editor/cn/5-longest-palindromic-substring.cpp)
+add_executable(3102-minimize-manhattan-distances leetcode/editor/cn/3102-minimize-manhattan-distances.cpp)
+add_executable(2970-count-the-number-of-incremovable-subarrays-i leetcode/editor/cn/2970-count-the-number-of-incremovable-subarrays-i.cpp)

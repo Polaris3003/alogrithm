@@ -24,7 +24,11 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11,
+						12,
+						13
 					]
 				}
 			],
@@ -48,7 +52,11 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11,
+						12,
+						13
 					]
 				}
 			],
@@ -77,6 +85,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "2970-count-the-number-of-incremovable-subarrays-i::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2970-count-the-number-of-incremovable-subarrays-i-Debug-8462205517ab4baa4f80.json",
+					"name" : "2970-count-the-number-of-incremovable-subarrays-i",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "3-longest-substring-without-repeating-characters::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-3-longest-substring-without-repeating-characters-Debug-cab668f7392c1dd8abb0.json",
 					"name" : "3-longest-substring-without-repeating-characters",
@@ -98,6 +113,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "3102-minimize-manhattan-distances::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3102-minimize-manhattan-distances-Debug-665a1bdb89d85b589ae7.json",
+					"name" : "3102-minimize-manhattan-distances",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "3115-maximum-prime-difference::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-3115-maximum-prime-difference-Debug-abfd6249426ce6d0d498.json",
 					"name" : "3115-maximum-prime-difference",
@@ -115,6 +137,20 @@
 					"id" : "4-median-of-two-sorted-arrays::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-4-median-of-two-sorted-arrays-Debug-6554e9f7b58e73da2966.json",
 					"name" : "4-median-of-two-sorted-arrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "5-longest-palindromic-substring::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-5-longest-palindromic-substring-Debug-57ae1d6096599ded13b3.json",
+					"name" : "5-longest-palindromic-substring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "724-find-pivot-index::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-724-find-pivot-index-Debug-bb81967d3c66c7113b73.json",
+					"name" : "724-find-pivot-index",
 					"projectIndex" : 0
 				},
 				{

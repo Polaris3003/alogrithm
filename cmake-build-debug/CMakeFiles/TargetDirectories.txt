@@ -8,5 +8,9 @@
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3086-minimum-moves-to-pick-k-ones.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/4-median-of-two-sorted-arrays.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/724-find-pivot-index.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/5-longest-palindromic-substring.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/3102-minimize-manhattan-distances.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2970-count-the-number-of-incremovable-subarrays-i.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

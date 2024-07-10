@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/2970-count-the-number-of-incremovable-subarrays-i.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/2970-count-the-number-of-incremovable-subarrays-i.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2970" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/2970-count-the-number-of-incremovable-subarrays-i.cpp" />
+              <option name="titleSlug" value="count-the-number-of-incremovable-subarrays-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/3-longest-substring-without-repeating-characters.cpp">
           <value>
             <LeetcodeEditor>
@@ -69,6 +80,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/3102-minimize-manhattan-distances.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/3102-minimize-manhattan-distances.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3102" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/3102-minimize-manhattan-distances.cpp" />
+              <option name="titleSlug" value="minimize-manhattan-distances" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/3115-maximum-prime-difference.cpp">
           <value>
             <LeetcodeEditor>
@@ -99,6 +121,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/4-median-of-two-sorted-arrays.cpp" />
               <option name="titleSlug" value="median-of-two-sorted-arrays" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/5-longest-palindromic-substring.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/5-longest-palindromic-substring.md" />
+              <option name="frontendQuestionId" value="leetcode.cn5" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/5-longest-palindromic-substring.cpp" />
+              <option name="titleSlug" value="longest-palindromic-substring" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/724-find-pivot-index.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/724-find-pivot-index.md" />
+              <option name="frontendQuestionId" value="leetcode.cn724" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/724-find-pivot-index.cpp" />
+              <option name="titleSlug" value="find-pivot-index" />
             </LeetcodeEditor>
           </value>
         </entry>
