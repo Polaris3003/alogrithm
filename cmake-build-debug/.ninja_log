@@ -1,15 +1,13 @@
 # ninja log v5
-5349	5867	1719815189307072407	2065-maximum-path-quality-of-a-graph	977735e896dc41c5
 10	3905	1719987483106050869	CMakeFiles/3-longest-substring-without-repeating-characters.dir/leetcode/editor/cn/3-longest-substring-without-repeating-characters.cpp.o	d966887def5855ef
 2848	3296	1719805412750125456	lc	773d6b2cf1e98ed
 49	5347	1719815188779717190	CMakeFiles/2065-maximum-path-quality-of-a-graph.dir/leetcode/editor/cn/2065-maximum-path-quality-of-a-graph.cpp.o	59d0e858e94925bb
 4	2840	1719805412295334466	CMakeFiles/lc.dir/main.cpp.o	ef362bb9545cda0b
-16	6943	1720075831343989002	CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp.o	2521294e932bd94d
 26	6228	1720445684386898250	CMakeFiles/724-find-pivot-index.dir/leetcode/editor/cn/724-find-pivot-index.cpp.o	6db89fc19d6f6123
 6233	6822	1720445684982645700	724-find-pivot-index	4ca2b52e4f76dff5
+5349	5867	1719815189307072407	2065-maximum-path-quality-of-a-graph	977735e896dc41c5
 3906	4276	1719987483476928294	3-longest-substring-without-repeating-characters	bb764ed07b4bde4d
 6944	7429	1720075831845154425	3203-find-minimum-diameter-after-merging-two-trees	64503d2d612659ed
-36	5396	1720603203463400836	CMakeFiles/5-longest-palindromic-substring.dir/leetcode/editor/cn/5-longest-palindromic-substring.cpp.o	59a8eec4462981b1
-5398	5969	1720603204033470960	5-longest-palindromic-substring	9038aca74146329e
 29	7739	1720603303493525208	CMakeFiles/5-longest-palindromic-substring.dir/leetcode/editor/cn/5-longest-palindromic-substring.cpp.o	59a8eec4462981b1
+16	6943	1720075831343989002	CMakeFiles/3203-find-minimum-diameter-after-merging-two-trees.dir/leetcode/editor/cn/3203-find-minimum-diameter-after-merging-two-trees.cpp.o	2521294e932bd94d
 7741	7938	1720603303716955039	5-longest-palindromic-substring	9038aca74146329e

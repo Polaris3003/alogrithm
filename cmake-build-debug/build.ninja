@@ -474,6 +474,68 @@ build 2970-count-the-number-of-incremovable-subarrays-i: CXX_EXECUTABLE_LINKER__
   TARGET_FILE = 2970-count-the-number-of-incremovable-subarrays-i
   TARGET_PDB = 2970-count-the-number-of-incremovable-subarrays-i.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 10-regular-expression-matching
+
+
+#############################################
+# Order-only phony target for 10-regular-expression-matching
+
+build cmake_object_order_depends_target_10-regular-expression-matching: phony || CMakeFiles/10-regular-expression-matching.dir
+
+build CMakeFiles/10-regular-expression-matching.dir/leetcode/editor/cn/10-regular-expression-matching.cpp.o: CXX_COMPILER__10-regular-expression-matching_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/10-regular-expression-matching.cpp || cmake_object_order_depends_target_10-regular-expression-matching
+  DEP_FILE = CMakeFiles/10-regular-expression-matching.dir/leetcode/editor/cn/10-regular-expression-matching.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/10-regular-expression-matching.dir
+  OBJECT_FILE_DIR = CMakeFiles/10-regular-expression-matching.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10-regular-expression-matching
+
+
+#############################################
+# Link the executable 10-regular-expression-matching
+
+build 10-regular-expression-matching: CXX_EXECUTABLE_LINKER__10-regular-expression-matching_Debug CMakeFiles/10-regular-expression-matching.dir/leetcode/editor/cn/10-regular-expression-matching.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/10-regular-expression-matching.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 10-regular-expression-matching
+  TARGET_PDB = 10-regular-expression-matching.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1456-maximum-number-of-vowels-in-a-substring-of-given-length
+
+
+#############################################
+# Order-only phony target for 1456-maximum-number-of-vowels-in-a-substring-of-given-length
+
+build cmake_object_order_depends_target_1456-maximum-number-of-vowels-in-a-substring-of-given-length: phony || CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir
+
+build CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir/leetcode/editor/cn/1456-maximum-number-of-vowels-in-a-substring-of-given-length.cpp.o: CXX_COMPILER__1456-maximum-number-of-vowels-in-a-substring-of-given-length_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/1456-maximum-number-of-vowels-in-a-substring-of-given-length.cpp || cmake_object_order_depends_target_1456-maximum-number-of-vowels-in-a-substring-of-given-length
+  DEP_FILE = CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir/leetcode/editor/cn/1456-maximum-number-of-vowels-in-a-substring-of-given-length.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir
+  OBJECT_FILE_DIR = CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1456-maximum-number-of-vowels-in-a-substring-of-given-length
+
+
+#############################################
+# Link the executable 1456-maximum-number-of-vowels-in-a-substring-of-given-length
+
+build 1456-maximum-number-of-vowels-in-a-substring-of-given-length: CXX_EXECUTABLE_LINKER__1456-maximum-number-of-vowels-in-a-substring-of-given-length_Debug CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir/leetcode/editor/cn/1456-maximum-number-of-vowels-in-a-substring-of-given-length.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 1456-maximum-number-of-vowels-in-a-substring-of-given-length
+  TARGET_PDB = 1456-maximum-number-of-vowels-in-a-substring-of-given-length.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -508,7 +570,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length
 
 # =============================================================================
 # Built-in targets
