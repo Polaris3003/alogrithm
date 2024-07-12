@@ -30,7 +30,9 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17
 					]
 				}
 			],
@@ -60,7 +62,9 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17
 					]
 				}
 			],
@@ -103,9 +107,23 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "2269-find-the-k-beauty-of-a-number::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2269-find-the-k-beauty-of-a-number-Debug-9f690d2d81684570dac7.json",
+					"name" : "2269-find-the-k-beauty-of-a-number",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "2970-count-the-number-of-incremovable-subarrays-i::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-2970-count-the-number-of-incremovable-subarrays-i-Debug-8462205517ab4baa4f80.json",
 					"name" : "2970-count-the-number-of-incremovable-subarrays-i",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2974-minimum-number-game::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2974-minimum-number-game-Debug-2796c9f5adb0d542c2aa.json",
+					"name" : "2974-minimum-number-game",
 					"projectIndex" : 0
 				},
 				{

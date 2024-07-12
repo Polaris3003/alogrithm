@@ -20,3 +20,5 @@ add_executable(3102-minimize-manhattan-distances leetcode/editor/cn/3102-minimiz
 add_executable(2970-count-the-number-of-incremovable-subarrays-i leetcode/editor/cn/2970-count-the-number-of-incremovable-subarrays-i.cpp)
 add_executable(10-regular-expression-matching leetcode/editor/cn/10-regular-expression-matching.cpp)
 add_executable(1456-maximum-number-of-vowels-in-a-substring-of-given-length leetcode/editor/cn/1456-maximum-number-of-vowels-in-a-substring-of-given-length.cpp)
+add_executable(2269-find-the-k-beauty-of-a-number leetcode/editor/cn/2269-find-the-k-beauty-of-a-number.cpp)
+add_executable(2974-minimum-number-game leetcode/editor/cn/2974-minimum-number-game.cpp)
