@@ -16,5 +16,7 @@
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/1456-maximum-number-of-vowels-in-a-substring-of-given-length.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2269-find-the-k-beauty-of-a-number.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2974-minimum-number-game.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/11-container-with-most-water.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/721-accounts-merge.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

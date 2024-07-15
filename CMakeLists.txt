@@ -22,3 +22,5 @@ add_executable(10-regular-expression-matching leetcode/editor/cn/10-regular-expr
 add_executable(1456-maximum-number-of-vowels-in-a-substring-of-given-length leetcode/editor/cn/1456-maximum-number-of-vowels-in-a-substring-of-given-length.cpp)
 add_executable(2269-find-the-k-beauty-of-a-number leetcode/editor/cn/2269-find-the-k-beauty-of-a-number.cpp)
 add_executable(2974-minimum-number-game leetcode/editor/cn/2974-minimum-number-game.cpp)
+add_executable(11-container-with-most-water leetcode/editor/cn/11-container-with-most-water.cpp)
+add_executable(721-accounts-merge leetcode/editor/cn/721-accounts-merge.cpp)
