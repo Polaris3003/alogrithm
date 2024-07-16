@@ -47,6 +47,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/15-3sum.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/15-3sum.md" />
+              <option name="frontendQuestionId" value="leetcode.cn15" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/15-3sum.cpp" />
+              <option name="titleSlug" value="3sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/2-add-two-numbers.cpp">
           <value>
             <LeetcodeEditor>
@@ -77,6 +88,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/2269-find-the-k-beauty-of-a-number.cpp" />
               <option name="titleSlug" value="find-the-k-beauty-of-a-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/2956-find-common-elements-between-two-arrays.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2956" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp" />
+              <option name="titleSlug" value="find-common-elements-between-two-arrays" />
             </LeetcodeEditor>
           </value>
         </entry>

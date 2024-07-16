@@ -660,6 +660,68 @@ build 721-accounts-merge: CXX_EXECUTABLE_LINKER__721-accounts-merge_Debug CMakeF
   TARGET_FILE = 721-accounts-merge
   TARGET_PDB = 721-accounts-merge.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 2956-find-common-elements-between-two-arrays
+
+
+#############################################
+# Order-only phony target for 2956-find-common-elements-between-two-arrays
+
+build cmake_object_order_depends_target_2956-find-common-elements-between-two-arrays: phony || CMakeFiles/2956-find-common-elements-between-two-arrays.dir
+
+build CMakeFiles/2956-find-common-elements-between-two-arrays.dir/leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp.o: CXX_COMPILER__2956-find-common-elements-between-two-arrays_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp || cmake_object_order_depends_target_2956-find-common-elements-between-two-arrays
+  DEP_FILE = CMakeFiles/2956-find-common-elements-between-two-arrays.dir/leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/2956-find-common-elements-between-two-arrays.dir
+  OBJECT_FILE_DIR = CMakeFiles/2956-find-common-elements-between-two-arrays.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2956-find-common-elements-between-two-arrays
+
+
+#############################################
+# Link the executable 2956-find-common-elements-between-two-arrays
+
+build 2956-find-common-elements-between-two-arrays: CXX_EXECUTABLE_LINKER__2956-find-common-elements-between-two-arrays_Debug CMakeFiles/2956-find-common-elements-between-two-arrays.dir/leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/2956-find-common-elements-between-two-arrays.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2956-find-common-elements-between-two-arrays
+  TARGET_PDB = 2956-find-common-elements-between-two-arrays.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 15-3sum
+
+
+#############################################
+# Order-only phony target for 15-3sum
+
+build cmake_object_order_depends_target_15-3sum: phony || CMakeFiles/15-3sum.dir
+
+build CMakeFiles/15-3sum.dir/leetcode/editor/cn/15-3sum.cpp.o: CXX_COMPILER__15-3sum_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/15-3sum.cpp || cmake_object_order_depends_target_15-3sum
+  DEP_FILE = CMakeFiles/15-3sum.dir/leetcode/editor/cn/15-3sum.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/15-3sum.dir
+  OBJECT_FILE_DIR = CMakeFiles/15-3sum.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 15-3sum
+
+
+#############################################
+# Link the executable 15-3sum
+
+build 15-3sum: CXX_EXECUTABLE_LINKER__15-3sum_Debug CMakeFiles/15-3sum.dir/leetcode/editor/cn/15-3sum.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/15-3sum.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 15-3sum
+  TARGET_PDB = 15-3sum.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -694,7 +756,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length 2269-find-the-k-beauty-of-a-number 2974-minimum-number-game 11-container-with-most-water 721-accounts-merge
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length 2269-find-the-k-beauty-of-a-number 2974-minimum-number-game 11-container-with-most-water 721-accounts-merge 2956-find-common-elements-between-two-arrays 15-3sum
 
 # =============================================================================
 # Built-in targets

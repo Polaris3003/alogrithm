@@ -24,3 +24,5 @@ add_executable(2269-find-the-k-beauty-of-a-number leetcode/editor/cn/2269-find-t
 add_executable(2974-minimum-number-game leetcode/editor/cn/2974-minimum-number-game.cpp)
 add_executable(11-container-with-most-water leetcode/editor/cn/11-container-with-most-water.cpp)
 add_executable(721-accounts-merge leetcode/editor/cn/721-accounts-merge.cpp)
+add_executable(2956-find-common-elements-between-two-arrays leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp)
+add_executable(15-3sum leetcode/editor/cn/15-3sum.cpp)
