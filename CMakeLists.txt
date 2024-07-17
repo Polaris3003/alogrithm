@@ -26,3 +26,5 @@ add_executable(11-container-with-most-water leetcode/editor/cn/11-container-with
 add_executable(721-accounts-merge leetcode/editor/cn/721-accounts-merge.cpp)
 add_executable(2956-find-common-elements-between-two-arrays leetcode/editor/cn/2956-find-common-elements-between-two-arrays.cpp)
 add_executable(15-3sum leetcode/editor/cn/15-3sum.cpp)
+add_executable(2959-number-of-possible-sets-of-closing-branches leetcode/editor/cn/2959-number-of-possible-sets-of-closing-branches.cpp)
+add_executable(17-letter-combinations-of-a-phone-number leetcode/editor/cn/17-letter-combinations-of-a-phone-number.cpp)

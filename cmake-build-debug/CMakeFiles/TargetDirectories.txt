@@ -20,5 +20,7 @@
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/721-accounts-merge.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2956-find-common-elements-between-two-arrays.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/15-3sum.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir
+/Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/17-letter-combinations-of-a-phone-number.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/polaris/Desktop/lc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

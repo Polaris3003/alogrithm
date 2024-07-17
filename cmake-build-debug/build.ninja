@@ -722,6 +722,68 @@ build 15-3sum: CXX_EXECUTABLE_LINKER__15-3sum_Debug CMakeFiles/15-3sum.dir/leetc
   TARGET_FILE = 15-3sum
   TARGET_PDB = 15-3sum.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 2959-number-of-possible-sets-of-closing-branches
+
+
+#############################################
+# Order-only phony target for 2959-number-of-possible-sets-of-closing-branches
+
+build cmake_object_order_depends_target_2959-number-of-possible-sets-of-closing-branches: phony || CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir
+
+build CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir/leetcode/editor/cn/2959-number-of-possible-sets-of-closing-branches.cpp.o: CXX_COMPILER__2959-number-of-possible-sets-of-closing-branches_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/2959-number-of-possible-sets-of-closing-branches.cpp || cmake_object_order_depends_target_2959-number-of-possible-sets-of-closing-branches
+  DEP_FILE = CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir/leetcode/editor/cn/2959-number-of-possible-sets-of-closing-branches.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir
+  OBJECT_FILE_DIR = CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2959-number-of-possible-sets-of-closing-branches
+
+
+#############################################
+# Link the executable 2959-number-of-possible-sets-of-closing-branches
+
+build 2959-number-of-possible-sets-of-closing-branches: CXX_EXECUTABLE_LINKER__2959-number-of-possible-sets-of-closing-branches_Debug CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir/leetcode/editor/cn/2959-number-of-possible-sets-of-closing-branches.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/2959-number-of-possible-sets-of-closing-branches.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2959-number-of-possible-sets-of-closing-branches
+  TARGET_PDB = 2959-number-of-possible-sets-of-closing-branches.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 17-letter-combinations-of-a-phone-number
+
+
+#############################################
+# Order-only phony target for 17-letter-combinations-of-a-phone-number
+
+build cmake_object_order_depends_target_17-letter-combinations-of-a-phone-number: phony || CMakeFiles/17-letter-combinations-of-a-phone-number.dir
+
+build CMakeFiles/17-letter-combinations-of-a-phone-number.dir/leetcode/editor/cn/17-letter-combinations-of-a-phone-number.cpp.o: CXX_COMPILER__17-letter-combinations-of-a-phone-number_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/17-letter-combinations-of-a-phone-number.cpp || cmake_object_order_depends_target_17-letter-combinations-of-a-phone-number
+  DEP_FILE = CMakeFiles/17-letter-combinations-of-a-phone-number.dir/leetcode/editor/cn/17-letter-combinations-of-a-phone-number.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/17-letter-combinations-of-a-phone-number.dir
+  OBJECT_FILE_DIR = CMakeFiles/17-letter-combinations-of-a-phone-number.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 17-letter-combinations-of-a-phone-number
+
+
+#############################################
+# Link the executable 17-letter-combinations-of-a-phone-number
+
+build 17-letter-combinations-of-a-phone-number: CXX_EXECUTABLE_LINKER__17-letter-combinations-of-a-phone-number_Debug CMakeFiles/17-letter-combinations-of-a-phone-number.dir/leetcode/editor/cn/17-letter-combinations-of-a-phone-number.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/17-letter-combinations-of-a-phone-number.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 17-letter-combinations-of-a-phone-number
+  TARGET_PDB = 17-letter-combinations-of-a-phone-number.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -756,7 +818,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length 2269-find-the-k-beauty-of-a-number 2974-minimum-number-game 11-container-with-most-water 721-accounts-merge 2956-find-common-elements-between-two-arrays 15-3sum
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length 2269-find-the-k-beauty-of-a-number 2974-minimum-number-game 11-container-with-most-water 721-accounts-merge 2956-find-common-elements-between-two-arrays 15-3sum 2959-number-of-possible-sets-of-closing-branches 17-letter-combinations-of-a-phone-number
 
 # =============================================================================
 # Built-in targets
