@@ -784,6 +784,68 @@ build 17-letter-combinations-of-a-phone-number: CXX_EXECUTABLE_LINKER__17-letter
   TARGET_FILE = 17-letter-combinations-of-a-phone-number
   TARGET_PDB = 17-letter-combinations-of-a-phone-number.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 2972-count-the-number-of-incremovable-subarrays-ii
+
+
+#############################################
+# Order-only phony target for 2972-count-the-number-of-incremovable-subarrays-ii
+
+build cmake_object_order_depends_target_2972-count-the-number-of-incremovable-subarrays-ii: phony || CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir
+
+build CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir/leetcode/editor/cn/2972-count-the-number-of-incremovable-subarrays-ii.cpp.o: CXX_COMPILER__2972-count-the-number-of-incremovable-subarrays-ii_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/2972-count-the-number-of-incremovable-subarrays-ii.cpp || cmake_object_order_depends_target_2972-count-the-number-of-incremovable-subarrays-ii
+  DEP_FILE = CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir/leetcode/editor/cn/2972-count-the-number-of-incremovable-subarrays-ii.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir
+  OBJECT_FILE_DIR = CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2972-count-the-number-of-incremovable-subarrays-ii
+
+
+#############################################
+# Link the executable 2972-count-the-number-of-incremovable-subarrays-ii
+
+build 2972-count-the-number-of-incremovable-subarrays-ii: CXX_EXECUTABLE_LINKER__2972-count-the-number-of-incremovable-subarrays-ii_Debug CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir/leetcode/editor/cn/2972-count-the-number-of-incremovable-subarrays-ii.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/2972-count-the-number-of-incremovable-subarrays-ii.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2972-count-the-number-of-incremovable-subarrays-ii
+  TARGET_PDB = 2972-count-the-number-of-incremovable-subarrays-ii.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3112-minimum-time-to-visit-disappearing-nodes
+
+
+#############################################
+# Order-only phony target for 3112-minimum-time-to-visit-disappearing-nodes
+
+build cmake_object_order_depends_target_3112-minimum-time-to-visit-disappearing-nodes: phony || CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir
+
+build CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir/leetcode/editor/cn/3112-minimum-time-to-visit-disappearing-nodes.cpp.o: CXX_COMPILER__3112-minimum-time-to-visit-disappearing-nodes_unscanned_Debug /Users/polaris/Desktop/lc/leetcode/editor/cn/3112-minimum-time-to-visit-disappearing-nodes.cpp || cmake_object_order_depends_target_3112-minimum-time-to-visit-disappearing-nodes
+  DEP_FILE = CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir/leetcode/editor/cn/3112-minimum-time-to-visit-disappearing-nodes.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir
+  OBJECT_FILE_DIR = CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir/leetcode/editor/cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3112-minimum-time-to-visit-disappearing-nodes
+
+
+#############################################
+# Link the executable 3112-minimum-time-to-visit-disappearing-nodes
+
+build 3112-minimum-time-to-visit-disappearing-nodes: CXX_EXECUTABLE_LINKER__3112-minimum-time-to-visit-disappearing-nodes_Debug CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir/leetcode/editor/cn/3112-minimum-time-to-visit-disappearing-nodes.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  OBJECT_DIR = CMakeFiles/3112-minimum-time-to-visit-disappearing-nodes.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 3112-minimum-time-to-visit-disappearing-nodes
+  TARGET_PDB = 3112-minimum-time-to-visit-disappearing-nodes.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -818,7 +880,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/polaris/Desktop/lc/cmake-build-debug
 
-build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length 2269-find-the-k-beauty-of-a-number 2974-minimum-number-game 11-container-with-most-water 721-accounts-merge 2956-find-common-elements-between-two-arrays 15-3sum 2959-number-of-possible-sets-of-closing-branches 17-letter-combinations-of-a-phone-number
+build all: phony lc 2065-maximum-path-quality-of-a-graph 1-two-sum 2-add-two-numbers 3115-maximum-prime-difference 3099-harshad-number 3-longest-substring-without-repeating-characters 3203-find-minimum-diameter-after-merging-two-trees 3086-minimum-moves-to-pick-k-ones 4-median-of-two-sorted-arrays 724-find-pivot-index 5-longest-palindromic-substring 3102-minimize-manhattan-distances 2970-count-the-number-of-incremovable-subarrays-i 10-regular-expression-matching 1456-maximum-number-of-vowels-in-a-substring-of-given-length 2269-find-the-k-beauty-of-a-number 2974-minimum-number-game 11-container-with-most-water 721-accounts-merge 2956-find-common-elements-between-two-arrays 15-3sum 2959-number-of-possible-sets-of-closing-branches 17-letter-combinations-of-a-phone-number 2972-count-the-number-of-incremovable-subarrays-ii 3112-minimum-time-to-visit-disappearing-nodes
 
 # =============================================================================
 # Built-in targets

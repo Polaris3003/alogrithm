@@ -28,3 +28,5 @@ add_executable(2956-find-common-elements-between-two-arrays leetcode/editor/cn/2
 add_executable(15-3sum leetcode/editor/cn/15-3sum.cpp)
 add_executable(2959-number-of-possible-sets-of-closing-branches leetcode/editor/cn/2959-number-of-possible-sets-of-closing-branches.cpp)
 add_executable(17-letter-combinations-of-a-phone-number leetcode/editor/cn/17-letter-combinations-of-a-phone-number.cpp)
+add_executable(2972-count-the-number-of-incremovable-subarrays-ii leetcode/editor/cn/2972-count-the-number-of-incremovable-subarrays-ii.cpp)
+add_executable(3112-minimum-time-to-visit-disappearing-nodes leetcode/editor/cn/3112-minimum-time-to-visit-disappearing-nodes.cpp)
